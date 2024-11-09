@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid{
+   display: grid;
+   grid-template-columns: repeat(3,300px);
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   background-image: url(./images/moon-fox-galaxy-4k-79-2880x1800.jpg); 
+}
+
+.container-grid .card{   
+    
+    width: 250px;
+    height: 300px;
+    background-color: transparent;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card img{
+    width: 235px;
+    height: 160px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    filter: brightness(0.7);
+    transition: 0.3s ease;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    color: wheat;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid wheat;
+}
+button:hover{
+    background-color: wheat;
+    cursor: pointer;
+    color: #21213B;
+    transition: 0.3s ease;
+}
+button:active{
+    transform: scale(0.9);
+}
+
+.card-text{
+    width: 200px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.card-text p{
+    color: wheat;
+}
